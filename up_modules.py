@@ -9,11 +9,11 @@ def up_check():
         call("pip freeze > requirements.txt",shell=True) # creating req file
         call('pip install -upgrade pip',shell=True)       
         if name == 'pip3':
-            call('pip3 install -r requirements.txt', shell=True) #using requriments.txt
+            call('pip3 install -r requirements.txt', shell=True) #using requirements.txt
             #call("pip3 install -U $(pip freeze | awk '{split($0, a, \"==\"); print a[1]}')", shell=True)
             print("pip3 is  done")
         else:
-            call("pip install -r requirements.txt", shell=True) #using requriments.txt
+            call("pip install -r requirements.txt", shell=True) #using requirements.txt
             #call("pip install -U $(pip freeze | awk '{split($0, a, \"==\"); print a[1]}')", shell=True)
             print('pip is done\n USE PIP3 its better')    
     elif name == 'conda' or 'anaconda':
