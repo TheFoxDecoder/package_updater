@@ -24,8 +24,7 @@ def up_check():
         print("IDK what the fuck you talking about \n Enter again!!")
 
 try:
-    while True:
-        up_check()
+    up_check()
 except KeyboardInterrupt:
     print('Boy did you just Interrupt Keyboard\nNow you fucked up!')
     
